@@ -1,0 +1,32 @@
+@media (max-width: 375px) {
+    .container {
+        width: 300px;
+        height: fit-content;
+        position: static;
+        transform: translate(0%,0%);
+        margin: 20px auto;
+    }
+
+    .container .top .obj-1 {
+        margin: 15px 0;
+    }
+
+    .container .bottom {
+        flex-flow: row wrap;
+    }
+
+    .container .top,
+    .container .bottom .bottom-left,
+    .container .bottom .bottom-right {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .container .bottom .bottom-left {
+        border-radius: 0;
+    }
+
+    .container .bottom .bottom-right {
+        border-bottom-left-radius: 10px;
+    }
+}
